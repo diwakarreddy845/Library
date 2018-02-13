@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<soap:envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+            soap:encodingstyle="http://www.w3.org/2003/05/soap-encoding">
+
+    <soap:header>
+
+    </soap:header>
+
+    <soap:body>
+        <ns2:getBookdetailsRequest xmlns:ns2="http://in28minutes.com/courses">
+            <ns2:id>book1</ns2:id>
+        </ns2:getBookdetailsRequest>
+    </soap:body>
+
+</soap:envelope>
+
