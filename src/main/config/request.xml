@@ -9,7 +9,7 @@
 
     <soap:body>
         <ns2:getBookdetailsRequest xmlns:ns2="http://in28minutes.com/courses">
-            <ns2:id>book1</ns2:id>
+            <ns2:id>123</ns2:id>
         </ns2:getBookdetailsRequest>
     </soap:body>
 
