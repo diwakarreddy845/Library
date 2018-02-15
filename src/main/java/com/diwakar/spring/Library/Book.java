@@ -27,4 +27,9 @@ public class Book {
     public String toString() {
         return "Book{" + "id=" + id + ", name='" + name + '\'' + ", author='" + author + '\'' + '}';
     }
+
+    @Override
+    public Book clone(){
+        return null;
+    }
 }
