@@ -3,7 +3,7 @@
   <xs:element name="getBookdetailsRequest" type="cour:getBookdetailsRequestType" xmlns:cour="http://in28minutes.com/courses"/>
   <xs:complexType name="getBookdetailsRequestType">
     <xs:sequence>
-      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:int" name="id"/>
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

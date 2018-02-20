@@ -4,7 +4,7 @@
   <xs:element name="GetCourseDetailsResponse" type="cour:GetCourseDetailsResponseType" xmlns:cour="http://in28minutes.com/courses"/>
   <xs:complexType name="CourseDetailsType">
     <xs:sequence>
-      <xs:element type="xs:integer" name="id"/>
+      <xs:element type="xs:int" name="id"/>
       <xs:element type="xs:string" name="name"/>
       <xs:element type="xs:string" name="author"/>
     </xs:sequence>
