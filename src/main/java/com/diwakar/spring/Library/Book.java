@@ -1,9 +1,15 @@
 package com.diwakar.spring.Library;
 
+import java.util.stream.Stream;
+
 public class Book {
     long id;
     String name;
     String author;
+
+    public Book(){
+
+    }
 
     public Book(long id, String name, String author) {
         this.id = id;
@@ -32,4 +38,22 @@ public class Book {
     public Book clone(){
         return null;
     }
+
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        Book book = (Book) o;
+
+        return name != null ? name.equals(book.name) : book.name == null;
+    }
+
+
 }
