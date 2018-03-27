@@ -1,15 +1,11 @@
-package com.diwakar.spring.Library;
-
-import java.util.stream.Stream;
+package com.diwakar.spring.Library.doamin;
 
 public class Book {
     long id;
     String name;
     String author;
 
-    public Book(){
 
-    }
 
     public Book(long id, String name, String author) {
         this.id = id;
