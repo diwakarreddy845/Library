@@ -1,11 +1,17 @@
 package com.diwakar.spring.Library.doamin;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Book {
+
+    @Id
     long id;
     String name;
     String author;
 
-
+    public Book(){ }
 
     public Book(long id, String name, String author) {
         this.id = id;
@@ -45,7 +51,6 @@ public class Book {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-
         Book book = (Book) o;
 
         return name != null ? name.equals(book.name) : book.name == null;

@@ -37,6 +37,20 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -45,10 +59,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.data</groupId>
@@ -81,80 +92,76 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+
 
 	</dependencies>
 
-	<!--<build>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>jaxb2-maven-plugin</artifactId>
-                    <version>1.6</version>
-                    <executions>
-                        <execution>
-                            <id>xjc</id>
-                            <goals>
-                                <goal>xjc</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <schemaDirectory>${project.basedir}/src/main/config</schemaDirectory>
-                        <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
-                        <clearOutputDir>false</clearOutputDir>
-                    </configuration>
-                </plugin>
-
-
 		</plugins>
 	</build>
+	<!-- <plugin>
+         <groupId>org.codehaus.mojo</groupId>
+         <artifactId>jaxb2-maven-plugin</artifactId>
+         <version>1.6</version>
+         <executions>
+             <execution>
+                 <id>xjc</id>
+                 <goals>
+                     <goal>xjc</goal>
+                 </goals>
+             </execution>
+         </executions>
+         <configuration>
+             <schemaDirectory>${project.basedir}/src/main/config</schemaDirectory>
+             <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+             <clearOutputDir>false</clearOutputDir>
+         </configuration>
+     </plugin>
 
-    <repositories>
-        <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
+
+
+<repositories>
+<repository>
+ <id>spring-snapshots</id>
+ <name>Spring Snapshots</name>
+ <url>https://repo.spring.io/snapshot</url>
+ <snapshots>
+     <enabled>true</enabled>
+ </snapshots>
+</repository>
+<repository>
+ <id>spring-milestones</id>
+ <name>Spring Milestones</name>
+ <url>https://repo.spring.io/milestone</url>
+ <snapshots>
+     <enabled>false</enabled>
+ </snapshots>
+</repository>
+</repositories>
+
+<pluginRepositories>
+<pluginRepository>
+ <id>spring-snapshots</id>
+ <name>Spring Snapshots</name>
+ <url>https://repo.spring.io/snapshot</url>
+ <snapshots>
+     <enabled>true</enabled>
+ </snapshots>
+</pluginRepository>
+<pluginRepository>
+ <id>spring-milestones</id>
+ <name>Spring Milestones</name>
+ <url>https://repo.spring.io/milestone</url>
+ <snapshots>
+     <enabled>false</enabled>
+ </snapshots>
+</pluginRepository>
+</pluginRepositories>
 -->
 </project>
