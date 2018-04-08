@@ -30,15 +30,15 @@ public class LoginController {
         return booksService.getAllBooks();
     }
 
-   /* @RequestMapping("book/{id}")
+    @RequestMapping("book/{id}")
     public Book getBookById(@PathVariable int id){
         return booksService.getBookById(id);
-    }*/
+    }
 
-    @RequestMapping("/book/{name}")
+   /* @RequestMapping("/book/{name}")
     public Book getBookByName(@PathVariable String name){
         return booksService.getBookByName(name);
-    }
+    }*/
 
     @RequestMapping(method = RequestMethod.POST, value = "/book")
     public void getBookByName(@RequestBody Book name){

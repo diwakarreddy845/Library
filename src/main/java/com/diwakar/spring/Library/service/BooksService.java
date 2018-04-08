@@ -5,6 +5,8 @@ import com.diwakar.spring.Library.repo.BookRepository;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,14 +28,14 @@ public class BooksService {
         return list;
     }
 
-   /* public Book getBookById(int id){
-        return booksList.stream().filter(b -> b.getId() == id).findFirst().get();
-    }*/
-
-    public Book getBookByName(String name) {
-        //return booksList.stream().filter(b -> b.getName().equals(name)).findFirst().get();
-        return bookRepository.find;
+    public Book getBookById(long id){
+        return bookRepository.findById(""+id).get();
     }
+
+    /*public Book getBookByName(String name) {
+        //return booksList.stream().filter(b -> b.getName().equals(name)).findFirst().get();
+        return bookRepository.;
+    }*/
 
     public void addBook(Book book) {
        // booksList.add(book);
@@ -41,7 +43,7 @@ public class BooksService {
     }
 
     public void updateBookById(int id, Book book){
-
+        bookRepository.save(book);
         /*for(int i=0; i<booksList.size(); i++){
             if(booksList.get(i).getId() == id){
                 booksList.set(i, book);
