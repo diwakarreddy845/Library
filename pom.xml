@@ -9,7 +9,7 @@
     <!--<modules>
         <module>JunitTests</module>
     </modules>-->
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
 	<name>Library</name>
 	<description>Demo project for Spring Boot</description>
