@@ -6,8 +6,12 @@
 </div>
 
 <ul>
-  <li><span>User Name : </span><input name="username"> </li>
+  <li><span>User Name : </span><input type="text" [(ngModel)] = "name"> </li>
   <li><span>Password :  </span><input name="password"> </li>
 </ul>
+<div class="container"> 
+  <p>{{name}}</p>
+</div>
+<app-home></app-home>
 
 <!-- <router-outlet></router-outlet> -->
