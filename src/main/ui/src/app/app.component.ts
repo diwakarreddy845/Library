@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Library';
-  name = "";
+  name = "10";
+
+  getName(){
+    return this.name;
+  }
 }

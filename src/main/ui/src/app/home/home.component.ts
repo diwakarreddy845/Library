@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  isEnabled= true;
+  constructor() { 
+    setTimeout(() => {
+      this.isEnabled = false;
+    }, 3000);
+  }
 
   ngOnInit() {
   }
