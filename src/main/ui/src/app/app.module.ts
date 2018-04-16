@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 const appRoutes: Routes = [
   {  
@@ -27,7 +29,9 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     ContactComponent,
-    AboutusComponent
+    AboutusComponent,
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,

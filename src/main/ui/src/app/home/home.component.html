@@ -12,7 +12,8 @@
 
     <form>
       <input type="text" class="txt" name="item" placeholder="Life goal..">
-      <button type="submit" class="btn btn-primary" [disabled]="isEnabled">Add Life Goals</button>
+      <button class="btn btn-primary" [disabled]="isEnabled" (click)="onButtonClick()">Add Life Goals</button>
+      <p>{{isHomePageAdded}}</p>
     </form>
   </div>
   <div class="col">

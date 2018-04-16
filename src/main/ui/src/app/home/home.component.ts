@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   isEnabled= true;
+  isHomePageAdded ="no Home Page Found";
   constructor() { 
     setTimeout(() => {
       this.isEnabled = false;
@@ -15,5 +16,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  onButtonClick(){
+    this.isHomePageAdded="Home page is created";
+  }
+
+
 
 }
