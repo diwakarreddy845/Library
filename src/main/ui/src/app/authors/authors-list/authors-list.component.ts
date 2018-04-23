@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Author} from '../author.model';
 
 @Component({
   selector: 'app-authors-list',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthorsListComponent implements OnInit {
 
-  constructor() { }
+  authorsListModels : Author[];
+  constructor() {
+
+    this.authorsListModels = [
+      new Author("diwakar", "this desdc", 12)
+    ];
+
+   }
 
   ngOnInit() {
   }
