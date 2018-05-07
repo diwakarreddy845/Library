@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Author } from '../../authors/author.model';
 
 @Component({
   selector: 'app-book-details',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookDetailsComponent implements OnInit {
 
+  @Output() bookAdded = new EventEmitter<{ name: string, author: string, description: string }>();
+  @Output() bookRemoved = new EventEmitter<{  name: string, author: string, description: string }>();
   constructor() { }
+
+  bookName = "";
+  bookAuthor = "";
+  bookDescription = "";
 
   ngOnInit() {
   }
 
+  addServer() {
+    this.bookAdded.emit({
+      name:this.bookName,
+      author:this.bookAuthor,
+      description:this.bookDescription
+    });
+  }
+
+  removeServer() {
+    this.bookRemoved.emit({
+      name:this.bookName,
+      author:this.bookAuthor,
+      description:this.bookDescription
+    });
+  }
 }

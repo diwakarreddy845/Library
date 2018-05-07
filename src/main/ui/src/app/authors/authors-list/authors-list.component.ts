@@ -12,7 +12,9 @@ export class AuthorsListComponent implements OnInit {
   constructor() {
 
     this.authorsListModels = [
-      new Author("diwakar", "this desdc", 12)
+      new Author("diwakar", 
+      "this desdc", 
+      "https://collegecures.com/wp-content/uploads/2011/01/small-vs-large1.jpg")
     ];
 
    }
