@@ -9,7 +9,13 @@ export class AppComponent {
   title = 'Library';
   name = "10";
 
-  getName(){
+  getName() {
     return this.name;
+  }
+
+  navSelectedItem = "";
+
+  navItemSelected(selectI: string) {
+    this.navSelectedItem = selectI;
   }
 }

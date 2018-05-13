@@ -1,10 +1,10 @@
-<app-header></app-header>
+<app-header (selectNavItem)="navItemSelected($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-books></app-books>
-      <app-authors></app-authors>
-      <app-shopping-list></app-shopping-list>
+      <app-books *ngIf="navSelectedItem ==='book'" ></app-books>
+      <app-authors *ngIf="navSelectedItem ==='author'"></app-authors>
+      <app-shopping-list *ngIf="navSelectedItem ==='shopping'"></app-shopping-list>
     </div>
   </div>
 </div>
