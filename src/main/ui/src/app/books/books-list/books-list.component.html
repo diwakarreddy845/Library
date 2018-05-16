@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="heading">Book List Heading</div>
+    </div>
+</div>
+<div class="row">
+        <div class="col-md-6">
+            <app-book *ngFor="let book of bookList" 
+            [book]="book"></app-book>
+        </div>
+        <div class="col-md-6">
+          <app-book-details 
+          (bookAdded)="addBook($event)"
+          (bookRemoved)="removeBook($event)"></app-book-details>
+        </div>
+      </div>
