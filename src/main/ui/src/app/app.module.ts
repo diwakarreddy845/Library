@@ -17,6 +17,7 @@ import { AuthorComponent } from './authors/authors-list/author/author.component'
 import { AuthorDetailsComponent } from './authors/author-details/author-details.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 
 
@@ -37,6 +38,7 @@ const appRoutes: Routes = [];
     AuthorDetailsComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
