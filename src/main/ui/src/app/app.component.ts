@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Library';
   name = "10";
 
+
   getName() {
     return this.name;
   }

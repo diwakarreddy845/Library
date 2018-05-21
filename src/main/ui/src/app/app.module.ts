@@ -18,6 +18,8 @@ import { AuthorDetailsComponent } from './authors/author-details/author-details.
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { StructureDirective } from './directives/structure.directive';
+import { DropdownDirective } from './directives/dropdown.directive';
 
 
 
@@ -39,6 +41,8 @@ const appRoutes: Routes = [];
     ShoppingListComponent,
     ShoppingEditComponent,
     HighlightDirective,
+    StructureDirective,
+    DropdownDirective,
   ],
   imports: [
     BrowserModule,

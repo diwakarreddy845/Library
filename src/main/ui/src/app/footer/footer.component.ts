@@ -11,5 +11,6 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  color = 'yellow';
+  condition = true;
 }
