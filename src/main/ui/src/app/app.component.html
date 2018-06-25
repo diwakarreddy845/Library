@@ -1,5 +1,5 @@
 <app-header (selectNavItem)="navItemSelected($event)"></app-header>
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-md-12">
       <app-books *ngIf="navSelectedItem ==='book'" ></app-books>
@@ -7,6 +7,16 @@
       <app-shopping-list *ngIf="navSelectedItem ==='shopping'"></app-shopping-list>
     </div>
   </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
+
+
 
 <app-footer></app-footer>

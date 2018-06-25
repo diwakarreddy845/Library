@@ -7,14 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   title = 'Library';
-  name = "10";
-
+  name = '10';
+  navSelectedItem = '';
 
   getName() {
     return this.name;
   }
-
-  navSelectedItem = "";
 
   navItemSelected(selectI: string) {
     this.navSelectedItem = selectI;

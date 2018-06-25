@@ -23,7 +23,11 @@ import { DropdownDirective } from './directives/dropdown.directive';
 
 
 
-const appRoutes: Routes = [];
+const appRoutes: Routes = [
+  {path: 'books', component: BooksComponent},
+  {path: 'authors', component: AuthorsComponent},
+  {path: 'shoppingList', component: ShoppingListComponent}
+];
 
 @NgModule({
   declarations: [
@@ -46,7 +50,8 @@ const appRoutes: Routes = [];
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
