@@ -7,9 +7,8 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isOpen = false;
   @Output() selectNavItem = new EventEmitter<string>();
-
-
 
   constructor() { }
 
@@ -20,4 +19,7 @@ export class HeaderComponent implements OnInit {
     this.selectNavItem.emit(selectI);
   }
 
+  dropDownMenu() {
+   this.isOpen = ! this.isOpen;
+  }
 }
